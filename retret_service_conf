@@ -1,0 +1,11 @@
+service retret_service_conf
+{
+    flags = REUSE
+    socket_type = stream
+    wait = no
+    user = retret
+    server = /service/retret
+    server_args = 
+    disable = no
+    port = 4000
+}
